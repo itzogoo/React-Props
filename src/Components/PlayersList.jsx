@@ -8,7 +8,7 @@ const PlayersList =({image,name,nationality,team,age,jerseyNumber})=> {
   return (
     <div className="container">
       <div className="card">
-        <img src={image} alt="picture" />
+        <img src={image} alt="pictures" />
         <div>
         <h3 className="title">Name:{name}</h3>
         <p>Nationality:{nationality}</p>
@@ -16,7 +16,7 @@ const PlayersList =({image,name,nationality,team,age,jerseyNumber})=> {
         <div>
           <p>Team:{team}</p>
           <p>Age:{age}</p>
-          <p>JerseyNumber:{jerseyNumber}</p>
+          <p>JerseyNumber#:{jerseyNumber}</p>
         </div>
       </div>
     </div>
@@ -30,7 +30,7 @@ PlayersList.propTypes = {
   name: PropTypes.string,
   nationality: PropTypes.string,
   team: PropTypes.string
-}
+};
 
 export default PlayersList;
 
